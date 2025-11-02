@@ -45,6 +45,7 @@ def commands():
     elif command == '/complete':
         element = unfinished_task.pop()
         completed_task.append(element)
+        print("Задача завершена")
         command
     elif command == '/compt':
         for el, task in enumerate(completed_task, 1):
